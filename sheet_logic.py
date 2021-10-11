@@ -78,7 +78,7 @@ def add_new_excel_sheet(workbook, data):
     writer = pd.ExcelWriter(EXCEL_NAME, engine='openpyxl')
     writer.book = workbook
     data.to_excel(writer, sheet_name=get_datetime('date'), index=False)
-    writer.sheets[get_datetime('date')].activate()
+    writer.book.active = len(writer.book.sheetnames) - 1
 
     writer.close()
 
