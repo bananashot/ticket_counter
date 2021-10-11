@@ -85,7 +85,7 @@ def add_new_excel_sheet(workbook, data):
 
 def add_ticket():
     get_excel_file()
-    
+
     clipboard_result = get_ticket_id_url()
 
     if type(clipboard_result) is str:
