@@ -116,6 +116,8 @@ def get_today_ticket_count():
 
 
 def open_sheet_copy():
+    get_excel_file()
+    
     try:
         copyfile(f'./{EXCEL_NAME}', './temporary.xlsx')
     except PermissionError:
