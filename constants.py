@@ -2,7 +2,7 @@ EXCEL_NAME = 'ticket_history.xlsx'
 
 CONSECUTIVE_DUPLICATES_ALLOWED = False
 
-LINK_STARTSwITH = ''
+LINK_STARTSwITH = 'https://onlyfans.zendesk.com/'
 
 CUSTOM_ERRORS = {
     'incorrect_link': 'The entry in clipboard does not match the rules. No changes to excel were made.',
