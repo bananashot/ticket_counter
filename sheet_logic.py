@@ -28,6 +28,7 @@ def get_ticket_id_url():
     sleep(.1)
     pya.hotkey('ctrl', 'c')
     sleep(.1)
+    pya.press('tab')
 
     url = paste()
 
